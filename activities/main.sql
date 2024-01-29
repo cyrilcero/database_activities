@@ -21,3 +21,11 @@ WHERE id = 1;
 
 DELETE FROM students
 WHERE id = 6; -- OR (SELECT MAX(id) FROM students);
+
+SELECT COUNT(id) as total_student FROM students;
+
+SELECT * FROM STUDENTS WHERE location = 'Manila';
+
+SELECT AVG(age) FROM STUDENTS;
+
+SELECT * FROM students ORDER BY age DESC;
