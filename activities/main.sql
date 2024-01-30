@@ -44,7 +44,7 @@ FROM STUDENTS
 WHERE location = 'Manila';
 
 -- DISPLAY THE AVERAGE AGE OF ALL STUDENTS
-SELECT ROUND(AVG(age),2) AS student_average_age
+SELECT ROUND(AVG(age),2) AS student_average_age -- edited after class presentation
 FROM STUDENTS;
 
 -- DISPLAY ALL STUDENTS BY AGE DESCENDING ORDER
