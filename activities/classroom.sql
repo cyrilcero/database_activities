@@ -1,9 +1,12 @@
+-- INIT TABLE
+-- CREATE TABLE
 CREATE TABLE classrooms (
     id INT NOT NULL,
     student_id INT NOT NULL,
     section varchar(1) NOT NULL,
     PRIMARY KEY (id) -- FOREIGN KEY (student_id) REFERENCES students(id)
 );
+-- ADD VALUES
 INSERT INTO classrooms (id, student_id, section)
 VALUES (1, 1, 'A'),
     (2, 2, 'A'),
@@ -16,8 +19,11 @@ VALUES (1, 1, 'A'),
     (9, 9, 'B'),
     (10, 10, 'C');
 -- DROP TABLE classrooms;
+-- INNER JOIN
 SELECT *
 FROM students s
     INNER JOIN classrooms c ON c.student_id = s.id;
-
--- 
+-- LEFT JOIN
+SELECT *
+FROM students s
+    LEFT OUTER JOIN classrooms c ON c.student_id = s.id;
